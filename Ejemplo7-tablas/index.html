@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <!--
+                ------------TABLAS----------------
+
+        Elementos de entrada de doble salida. Utiliza los mismos elementos
+        que cualquier entorno; filas, colmnas, datos...
+        SINTANXIS:
+            Etiqueta                            Descripción
+            <table>                         Etiqueta contenedora de la tabla
+            <th>                            Tabla elemento de dato header, cabecera-dato
+            <tr>                            Filas-row etiqueta contenedora de fila
+            <td>                            Datos de las celdas, las columns
+            <caption>                       Etiqueta contenedora de titulos.        
+    -->
+
+    <h3>Ejemplo de tabla simple</h3>
+    <table border="1" bgcolor="pink">
+        <caption> Numeración del 1 al 12</caption>
+        <tr bgcolor="blue">
+            <td>string, texto</td>
+            <td>DOS</td>
+            <td>TRES</td>
+        </tr>
+        <tr>
+            <td>Cuatro</td>
+            <td>Cinco</td>
+            <td>Seis</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Diez-10</td>
+            <td>Once-11</td>
+            <td>Doce-12</td>
+        </tr>
+    </table>
+
+    <!--
+        COMBINACION DE CELDAS
+
+        ATRIBUTOS                       VALOR                           DESCRIPCION
+        colspan                         numero de espacio               Numero de columnas/espacios que la celda abarcará
+        rowspan                         numero de espacio               Numero de filas/espacios que abarcará
+    -->
+    <h3>Combinacion de CELDAS</h3>
+    <table border="2" style="text-align: center;" align="center">
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+            <th>Columna 4</th>
+        </tr>
+        <tr>
+            <td colspan="2">Dato 1</td>
+            <td>Dato 3</td>
+            <td rowspan="3">Dato 4</td>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+            <!--  <td>Dato 4</td> -->
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">Dato 1</td>
+            <!-- <td>Dato 2</td> -->
+            <td>Dato 3</td>
+            <!-- <td>Dato 4</td> -->
+        </tr>
+        <tr>
+            <!--  <td>Dato 1</td>
+            <td>Dato 2</td> -->
+            <td>Dato 3</td>
+            <td>Dato 4</td>
+        </tr>
+    </table>
+    <h3>Agrupaciones de columnas</h3>
+    <table>
+        <caption>EL PERIODICO DIGITAL</caption>
+
+        <tr>
+            <th>NEWs</th>
+            <th>Deportes</th>
+            <th>Tiempo</th>
+        </tr>
+        <tr>
+            <td>NACIONAL</td>
+            <td>FUTBOL</td>
+            <td>EUROPA</td>
+        </tr>
+        <tr>
+            <td>INTERNACIONAL</td>
+            <td>PETACA</td>
+            <td>ESPAÑA</td>
+        </tr>
+        <tr>
+            <td>SUCESOS</td>
+            <td>BALONCESTO</td>
+            <td>MADRID</td>
+        </tr>
+        <colgroup>
+            <col style="background-color:lemonchiffon ;" />
+            <col span="2" style="background-color:lightsalmon ;" />
+        </colgroup>
+    </table>
+    <!--
+        Ejercicio:
+        Realizar una tabla de 3 columnas y 2 filas, fondo negro en la cabecera, (letras en azul), tabla centrada
+        y añadir enlaces . tematica: principales buscadores de internet, caña y pincho con imagenes!!!!
+    -->
+    <div style="text-align:center ;" align="center">
+        <h3>Ejercicio Principales Buscadores(tabla de 3 filas y 2 columnas)</h3>
+        <table align="center">
+
+            <tr style="color:blue ; background-color:#000000">
+                <th>Buscador</th>
+                <th>Referencias</th>
+            </tr>
+            <tr>
+                <td><a href="http://www.google.es"><img src="images/google.png" 
+                     width="80px" alt=""></a></td>
+                <td>America Centro Oriental</td>
+            </tr>
+            <tr>
+                <td><a href="http://www.bing.com"><img src="images/pngwing.com (6).png" 
+                    width="80px" alt=""></a></td>
+                <td>Europa Centro Asiatico</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
