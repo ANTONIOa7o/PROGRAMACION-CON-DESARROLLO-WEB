@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario I</title>
+</head>
+
+<body>
+    <!--
+
+-----------------------FORMULARIO---------------------
+<a href="pagina.interesa o referencia">Aqui se crea magia</a>
+<label>Nombre: </label>
+<input type="text" donde tenemos todo el interés de informacion>
+
+Séra ese conjunto de elementos que permite introducir datos a los usuarios
+para su tratamiento, almacenaje u otras operaciones
+Sintaxis:
+        <form>
+
+        </form>
+
+    ESTRUCTURA:
+    1.Agrupacion de los Contenidos
+        Partiremos de dos etiquetas contenedoras:
+         a)<fieldset></fieldset> En concreto delimita un conjunto de directivas
+            a resaltar
+         b)<legend></legend> Titulo del Formulario
+    2.Introduccion de los datos<input/>
+
+        a)Texto.
+            [atributos]
+            *type="Naturaleza del input, tipo texto, password, numero, file, ...."
+            *name="Nombre de llamada de la variable, que guarda dicho dato."
+            *size="Define el tamaño o valor de nº de caracteres."
+            *maxlenght="Limita el nº de caracteres a incorporar."
+            *value="valor por defecto establecido en esa variable."
+            *aling=""
+            *disable="elementos desactivados por determinado interes "
+            *readonly="impide modificar el conentenido del elemento"
+
+        b)Menus
+            Aqui se diferencia con respecto a la introduccion de datos, a una eleccion del usuario.
+            Siendo referentes:
+            i.Atributo <select> Percepción de una ventana desplegable
+                -> name
+                -> size
+                ->multiple
+            ii.Atributo <datalist> Permite montra una lista directa de valores.
+                ->select: Opción por defecto
+                ->value. Definirá el valor que tomara la variable
+
+    3.Envio de Datos
+                Será condición necesario, ,pero no suficiénte el boton
+                Sintaxis:
+                <input type="submit" value=""/> Aparecerá un bonton Enviar, al pulsar permite trasladar los datos,
+                El value, será el valor que le damos a la acción del botón para enviar
+                <input type="reset"/> Borrado de datos---Nada de recomendable----
+    -->
+    <div style="margin:0 auto ; width: 380px ;">
+        <form style="text-align: left;" action="">
+            <h2 align="middle">FORMULARIO HTML</h2>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label>Nombre:</label>
+                <input type="text" name="nombres" minlength="3" maxlength="20" /><br>
+                <label>Apellidos:</label>
+                <input type="text" name="apellidos" list="apellidosList"><br>
+                <datalist id="apellidosList">
+                    <option value="lopez">López</option>
+                    <option value="sanz">Sanz</option>
+                    <option value="castejon">Castejón</option>
+                    <option value="gutierrez">Gutierrez</option>
+                </datalist>
+                <label>Edad:</label>
+                <input type="number" name="edad" min="18" size="5"><br>
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Reservas:</legend>
+                <label> Escoge tu Aventura:</label>
+                <select name="experiencia">
+                    <option value="">--------</option>
+                    <option value="">Descenso de Rapìdos(150 €/Persona)</option>
+                    <option value="">Aventura Velero con Atardecer (135€/persona)</option>
+                    <option value="">MasterClass Surf (90€ para dos personas)</option>
+                    <option value="">Glamping (35€/noche-persona)</option>
+                </select>
+                <label>fecha de Reserva:</label>
+                <input type="date" name="reserva" />
+                <label>fecha de entrada:</label>
+                <input type="datetime-local" name="entrada" />
+                <label>fecha de salida</label>
+                <input type="datetime-local" name="salida" />
+            </fieldset>
+            <fieldset>
+                <legend>CONTACTO:</legend> 
+                <label> <strong>e-mail:</strong> </label>
+                <input type="email" name="email" id="" />
+            </fieldset><br>
+            <div align="middle">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+            </div>
+
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>
