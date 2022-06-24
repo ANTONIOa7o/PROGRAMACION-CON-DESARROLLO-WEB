@@ -1,0 +1,113 @@
+form,h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+/*
+ASOCIACION ( : )
+Selector conjugando etiquetas y atributos
+*/
+input:disabled{
+    color: red;
+    /* opacity: 1; */
+}
+/*
+Asociado a accion determinada
+*/
+input:focus{
+    border: thick solid skyblue;
+}
+/*
+Asociada a una accion de boton
+*/
+label:active{
+    background-color: skyblue;
+}
+/*
+Asociación etiquetas, atributo checbox + accion (input)
+para asociar etiquetas y estilos, utilizaremos el selector adyacente ( + )
+*/
+input[type=checkbox]:checked+label{
+    font-weight: bold;
+    color: green;
+    font-size: xx-large;
+}
+/*
+diferenciar ASOCIACION(intervencion de una accion) con COMUTACION DE ELEMENTOS
+*/
+form label{
+    color: blue ;
+    font-weight: bolder;
+}
+form label span{
+font-size: xx-small;
+color: black
+}
+/*
+SELECTORES CON DIRECITVA
+*/
+/*
+1. Comienzo de una seleccion, inicio de caracter
+*/
+ol li[id^='J']{
+    background-color: pink;
+}
+
+/*2. Contanga la seleccion*/
+ol li[id*='a']{
+    background-color: rgb(211, 157, 166);
+
+/*3. Finalizar la seleccion*/
+}
+ol li[id$='s']{
+    background-color: rgb(117, 86, 91);
+}
+table,tr,td{
+    width: 30%;
+    border: thin solid navy;
+    border-collapse: collapse;
+    caption-side: top;
+    text-align: center;
+    margin: 0 auto;
+}
+/*
+pseudo-clases;
+sintansix: [elemento,clase, o grupo elementos]:nth-child(posicion, )
+*/
+tr:nth-child(even){
+background-color: lightsalmon;
+}
+tr:nth-child(odd){
+    background-color: yellow;
+
+}
+/*
+Los más usados y de gran recurso serán los pseudo-elementos: 
+:first-child(seleccion de la primer elemento)
+:first-letter(seleccion primera letra)
+:before(Nos posiciona al inicio del contendio)
+:after(Nos posicional al final del contenido)
+:nth-of-type(En funcion de la posicion del elemento)
+*/
+ul li:first-child{
+  background-color: bisque   ;
+}
+ul li:nth-child(5){
+    background-color: burlywood;
+  }
+
+  /*
+  Ejercicio:
+  seleccionar de tres parrafos el primero sus fuentes sean negras, gruesas y 
+  de tamaño x-large y el tercero color letras rojas
+  */
+  p{
+    color:blue;
+}
+p:nth-of-type(1){
+    color:black;
+    font-weight: bold;
+    font-size: x-large;
+}
+p:last-child{
+    color: red;
+}
