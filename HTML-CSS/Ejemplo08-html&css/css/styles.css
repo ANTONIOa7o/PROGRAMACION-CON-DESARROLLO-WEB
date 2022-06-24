@@ -1,0 +1,92 @@
+/*
+CSS:
+Definido como hojas de Estilo en Cascada(Cascading Style Sheet), no es mas que otro 
+lenguaje, con una finalidad principal poder definir de manera global, parcial o 
+total la presentación de documentos estructurados en Html, generando contenido
+estetico y visual.
+*/
+/*
+1. ESTILO PARA UNA ETIQUETA O MAS
+Sintaxis: 
+etiqueta{
+    atributo:valor;
+}
+*/
+h3,
+h2,
+h1,
+h5,
+h6 {
+    color: slategrey;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*
+2.ESTILO PARA UNA ETIQUETA CON IDENTIFICADOR(id)
+Sintaxis:
+#nombreId{
+    atributo: Valor;
+}
+Trasladamos el estilo apuntando con el selector ' # ' o indicador
+*/
+#parrafo2 {
+    background-color: orange;
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+/*
+3.ESTILO ESTANDAR PARA APLICACIÓN ESTILOS
+Sintaxis:
+.nombreReferencia{
+atributo: Valor;
+El selector ' . ' como atributo class
+}
+*/
+.supercalifragilistico {
+    color: green;
+    text-align: center;
+
+}
+
+/*
+3.1 ESTILO ESTANDAR ETIQUETA+CLASE
+Sintaxis:
+etiqueta.nombreReferencia{
+    atributo: Valor;
+}
+*/
+
+p.verdoso {
+    color: green;
+    font-size: x-large;
+    border: 4px solid red;
+}
+
+/*
+Ejercicio:
+Realizar tabla con borde azul, centrada y una lista ordenada en mayuscula y centrada
+y otra no ordenada con estilo square, todo desde css
+*/
+ol {
+    list-style: circle;
+    margin-left: 150px;
+    text-transform: uppercase;
+
+}
+div{
+    margin-left: 380px;
+}
+table,th,td{
+    border: 2px solid cornflowerblue;
+    border-collapse: collapse;
+  margin-left: 150px;
+    text-transform: uppercase;
+    text-align: center;
+}
+a{
+color: rebeccapurple;
+font-weight: bold;
+text-decoration: none;
+}
