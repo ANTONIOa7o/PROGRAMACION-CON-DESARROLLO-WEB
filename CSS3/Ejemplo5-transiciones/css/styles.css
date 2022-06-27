@@ -1,0 +1,43 @@
+.centro{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.menu{
+background-color: rgb(212,205,205);
+color: white;
+border-color: black;
+font-family: sans-serif,cursive;
+font-size: 30px;
+text-decoration: none;
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 2px 2px 2px rgb(132, 137, 137);
+transition: 
+background-color 0.4s,
+border-radius 0.4s ;
+}
+.menu:hover{
+    background-color: rgb(238, 212, 212);
+    color:black;
+    box-shadow: 2px 2px 2px rgb(132, 137, 137);
+    border-radius:5px ;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+#caja{
+    width: 30em;
+    background-color:gainsboro;
+    border-radius: 9px;
+    padding: 1em;
+    font-weight: bold;
+    transition: width 2s, height 2s, background-color 4s, margin 8s;
+}
+#caja:hover{
+    width: 70%;
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
+}
