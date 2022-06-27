@@ -1,0 +1,78 @@
+div{
+    width: 30%;
+    height: 100px;
+    margin: 20px;
+    float: left;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+#defecto{
+    background: linear-gradient(
+   rgb(103,103,100),
+   rgb(236,169,236),
+   rgb(231,231,125)
+   );
+}
+#izd-drch{
+    background: linear-gradient(to right,
+    rgb(103,103,100),
+    rgb(236,169,236),
+    rgb(231,231,125)
+    );
+}
+#drch_izq{
+    background: linear-gradient(to left,
+    rgb(103,103,100),
+    rgb(236,169,236),
+    rgb(231,231,125)
+    );
+}
+#arriba{
+    background: linear-gradient(to top,
+    rgb(103,103,100),
+    rgb(236,169,236),
+    rgb(231,231,125)
+    );
+}
+#diagonal_drch{
+    background: linear-gradient(to bottom right,
+    rgb(103,103,100),
+    rgb(236,169,236),
+    rgb(231,231,125)
+    );
+}
+#diagonal_izqd{
+    background: linear-gradient(to bottom left,
+    rgb(103,103,100),
+    rgb(236,169,236),
+    rgb(231,231,125)
+    );
+}
+#centro{
+    background: radial-gradient(blue,violet,yellow);
+}
+#gradienteRedondeado{
+    background: radial-gradient(blue 40%,violet 60%,yellow 90%);
+    
+}
+#circular{
+    background: radial-gradient(circle,
+    blue,violet,yellow
+    );
+}
+#elipse{
+    background: radial-gradient(ellipse,
+    blue,violet,yellow
+    );
+}
+#camisetas{
+    background: repeating-radial-gradient(
+    blue 10%,violet 20%,yellow 30%
+    );
+}
+#opacidad{
+    background: linear-gradient(to bottom right,
+    white 90%, rgb(146, 143, 143));
+   
+    
+}
