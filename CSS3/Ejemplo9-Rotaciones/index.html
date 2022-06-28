@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotaciones</title>
+</head>
+<body>
+    <style>
+div{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px;
+    float: left;
+    text-align: center;
+    box-shadow: 1em 1em 1em lightblue;
+}
+/*
+ROTACIONES:
+Sintaxis:
+transform: rotate(grados de giro-angulo)
+Esta rotacion siempre en el sentido de las agujas del reloj
+*/
+#cuadro1{
+transform: rotate(30deg);
+}
+#cuadro2{
+    transform: rotate(-30deg);
+}
+/*
+rotacion3d(x,y,z y angulo)
+*/
+#cuadro3{
+transform: rotate3d(1,1,0,63deg);
+}
+    </style>
+
+
+    <div id="cuadro1">Hola</div>
+    <div id="cuadro2">Adios</div>
+    <div id="cuadro3">Más alla</div>
+
+</body>
+</html>

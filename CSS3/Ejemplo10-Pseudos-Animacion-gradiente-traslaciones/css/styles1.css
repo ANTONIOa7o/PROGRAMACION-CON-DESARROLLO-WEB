@@ -1,0 +1,93 @@
+.brillo {
+    background-color: #0070C9;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: x-large;
+    font-style: oblique;
+    transition: 0.2s;
+    position: relative;
+}
+
+div,
+h2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+@keyframes reflejo {
+    100% {
+        transform: rotateZ(60deg) translate(1em, -9em);
+    }
+}
+
+.brillo:hover {
+    transform: scale(1.2);
+}
+
+/*
+=========================
+Diferencia entre pseudoclase ( : ) y pseudoelementos ( :: )
+Mientras que el pseudoelemento atiende al aspecto estetico especificamente
+y pseudoclase atiende al estado del elemento
+
+::before y ::after
+
+*/
+.brillo:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    right: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom,
+            rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.5) 50%, rgba(229, 172, 142, 0));
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+
+}
+
+.brillo:hover::after,
+.brillo:focus::after {
+    animation: reflejo 1.2s;
+}
+
+.arcoiris{
+    background-color: #343A40;
+    border-radius: 4px;
+    color: #ffff;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.a{
+color: #E7484F;
+}
+.b{
+color: #F68B1D;
+}
+.c{
+color: #FCED00;
+}
+.d{
+color:#009E4F
+}
+.e{
+color: #00AAC3;
+}
+.f{
+color:#732982
+}
+.arcoiris:hover{
+    background:linear-gradient(to right,
+    red,orange,yellow,green,blue,indigo,violet,red);
+    animation: desliza 2s linear infinite;
+}
+@keyframes desliza {
+    100%{
+        background-position: 80px;
+    }
+}
